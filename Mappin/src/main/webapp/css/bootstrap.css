@@ -61,7 +61,7 @@ dfn {
 }
 h1 {
   margin: .67em 0;
-  font-size: 60pt;
+  font-size: 2em;
 }
 mark {
   color: #000;
@@ -4277,9 +4277,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 5px 5px;
-/*   font-size: 18px; */
-/*   line-height: 20px; */
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -6584,6 +6584,7 @@ button.close {
   td.visible-xs {
     display: table-cell !important;
   }
+  
 }
 @media (max-width: 767px) {
   .visible-xs-block {
