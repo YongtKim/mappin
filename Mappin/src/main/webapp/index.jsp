@@ -7,9 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <h1>Sample Spring Project</h1>
-<a href="start.do">home</a>
-<%-- 	<jsp:forward page="start.do"/> --%>
+<!-- <a href="start.do">home</a> -->
+<jsp:forward page="start.do"/> 
 </body>
 </html>

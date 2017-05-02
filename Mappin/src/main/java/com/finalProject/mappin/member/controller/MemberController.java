@@ -3,6 +3,7 @@ package com.finalProject.mappin.member.controller;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -14,7 +15,8 @@ import com.finalProject.mappin.member.model.vo.Member;
 
 @Controller
 //@RequestMapping("member")
-/*@SessionAttributes("loginUser")*/
+@SessionAttributes("loginUser")
+//@Scope("session")
 public class MemberController {
 	
 	@Autowired
@@ -23,8 +25,9 @@ public class MemberController {
 	@RequestMapping("login.do")
 	public ModelAndView loginCheck(Member member, ModelAndView mv, HttpSession session){
 		Member loginUser = memberService.loginCheck(member);
-		if(loginUser != null)
-			session.setAttribute("loginUser", loginUser);
+		
+//		if(loginUser != null)
+//			session.setAttribute("loginUser", loginUser);
 //		mv.addObject("loginUser", loginUser);
 		mv.setViewName("home");
 		return mv;
