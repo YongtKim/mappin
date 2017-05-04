@@ -22,8 +22,6 @@
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/bootsnav.css">
 
-
-    
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css" />
 
@@ -32,7 +30,7 @@
 </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
         <div class="culmn">
-        <jsp:include page="WEB-INF\views\common\menuBar.jsp"/>
+        <jsp:include page="WEB-INF/views/common/menuBar.jsp"/>
             <!--Home Sections-->
             <section id="hello" class="home bg-mega">
                 <div class="overlay"></div>
@@ -40,7 +38,7 @@
                     <div class="row">
                         <div class="main_home">
                             <div class="home_text">
-                                <h1 class="text-white">별이와 함께떠나는 여행</h1>
+                                <h1 class="text-white">Stay to mappin</h1>
                                 <h3 class="text-white">Enjoy your traveling with us </h3>
                             </div>
                             <div class="home_btns m-top-40">

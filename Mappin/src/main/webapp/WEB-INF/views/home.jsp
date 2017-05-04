@@ -30,7 +30,7 @@
 </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
         <div class="culmn">
-        <jsp:include page="common\menuBar.jsp"/>
+        <jsp:include page="common/menuBar.jsp"/>
         <section class="bg-mega">
         <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
 		  <!-- Indicators -->
