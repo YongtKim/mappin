@@ -263,8 +263,7 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot');
 }
 .glyphicon {
   position: relative;
@@ -1185,7 +1184,6 @@ h6,
 .h5,
 .h6 {
   font-family: inherit;
-  font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
@@ -1600,7 +1598,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 100%;
   }
 }
 .container-fluid {
@@ -2870,7 +2868,7 @@ select[multiple].input-lg {
   border-color: #8a6d3b;
 }
 .has-warning .form-control-feedback {
-  color: #8a6d3b;
+  color: #8a6d3bba
 }
 .has-error .help-block,
 .has-error .control-label,
@@ -4276,10 +4274,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: auto;
   padding: 15px 15px;
   font-size: 18px;
-  line-height: 20px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
