@@ -1,64 +1,54 @@
 package com.finalProject.mappin.member.controller;
 
+import java.lang.reflect.Member;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.finalProject.mappin.member.model.service.MemberService;
-import com.finalProject.mappin.member.model.vo.Member;
-
 
 @Controller
-//@RequestMapping("member")
-@SessionAttributes("loginUser")
-//@Scope("session")
 public class MemberController {
-	
+
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping("login.do")
+	@RequestMapping("logincheck.do")
 	public ModelAndView loginCheck(Member member, ModelAndView mv, HttpSession session){
-		Member loginUser = memberService.loginCheck(member);
-		
-//		if(loginUser != null)
-//			session.setAttribute("loginUser", loginUser);
-//		mv.addObject("loginUser", loginUser);
-		mv.setViewName("home");
 		return mv;
 	}
+	
 	@RequestMapping("logout.do")
-	public ModelAndView logOut(ModelAndView mv, HttpSession session){
-		session.invalidate();
-		mv.setViewName("home");
+	public ModelAndView logout(ModelAndView mv, HttpSession session){
 		return mv;
 	}
-	@RequestMapping("minsert.do")
-	public ModelAndView memberInsert(){
-		return null;
-	}
-	@RequestMapping("mupdate.do")
-	public ModelAndView memberUpdate(){
-		return null;
-	}
-	@RequestMapping("mdelete.do")
-	public String memberDelete(){
-		return null;
-	}
-	@RequestMapping("mlist.do")
-	public ModelAndView memberList(){
-		return null;
-	}
-	@RequestMapping("midSearch.do")
-	public ModelAndView memberIdSearch(){
-		return null;
+	
+	@RequestMapping("selectList.do")
+	public ModelAndView selectList(Member member, ModelAndView mv){
+		return mv;
 	}
 	
+	@RequestMapping("insert.do")
+	public ModelAndView insert(Member member, ModelAndView mv){
+		return mv;
+	}
 	
+	@RequestMapping("detail.do")
+	public ModelAndView detail(Member member, ModelAndView mv, HttpSession session){
+		return mv;
+	}
 	
+	@RequestMapping("delete.do")
+	public ModelAndView delete(Member member, ModelAndView mv, HttpSession session){
+		return mv;
+	}
+	
+	@RequestMapping("update.do")
+	public ModelAndView update(Member member, ModelAndView mv, HttpSession session){
+		return mv;
+	}
 }
